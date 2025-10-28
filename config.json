@@ -1,0 +1,17 @@
+{
+  "commission": { "banker": 0.95, "player": 1.0, "tie": 8.0 },
+  "ai": {
+    "recent_N": 20,
+    "confidence_threshold": 0.6,
+    "streak_weight": 0.2,
+    "zigzag_weight": 0.2,
+    "base_weight": 0.6
+  },
+  "risk": {
+    "daily_stop_loss": -30,
+    "daily_take_profit": 40,
+    "max_lose_streak": 3,
+    "unit_max": 5
+  },
+  "strategies": ["flat", "1324", "212", "paroli", "martingale", "kelly-lite"]
+}

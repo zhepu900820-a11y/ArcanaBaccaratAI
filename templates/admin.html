@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h4 class="mb-3">🛠 後台管理（MVP）</h4>
+<div class="card">
+  <div class="card-body">
+    <h6>會員列表（內建範例）</h6>
+    <table class="table table-dark table-striped">
+      <thead><tr><th>帳號</th><th>等級</th><th>到期日</th></tr></thead>
+      <tbody>
+        {% for u,info in users.items() %}
+        <tr><td>{{u}}</td><td>{{info.level if info.level else info["level"]}}</td><td>{{info.expire_at if info.expire_at else info["expire_at"]}}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="text-muted">完整的營收/金流/報表後續版本加入。</div>
+  </div>
+</div>
+{% endblock %}

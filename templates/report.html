@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h4 class="mb-3">📈 今日報表（MVP）</h4>
+<div class="card">
+  <div class="card-body">
+    <div>總局數：{{ report.total_hands }}</div>
+    <div>莊：{{ report.banker }}　閒：{{ report.player }}　和：{{ report.tie }}</div>
+    <div class="mt-2">當前盈虧（抽水後）：<b>{{ report.pnl }}</b> U</div>
+    <div class="text-muted mt-2">完整報表與 CSV 匯出會在下一版加入。</div>
+  </div>
+</div>
+{% endblock %}
